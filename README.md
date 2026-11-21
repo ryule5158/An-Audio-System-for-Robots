@@ -7,6 +7,8 @@
 
 正面是功放、散热片和电源接口，背面可以看到 STM32H743 主控。点照片可看大图。
 
+**[下载嘉立创 EDA 专业版工程](hardware/eda/Robot-Audio.epro2?raw=true)** · [浏览硬件文件](hardware/)
+
 ## 硬件设计
 
 - **八路拾音。** 8 颗 PDM 数字 MEMS 麦克风接到 PCMD3180，由它输出 TDM，再送入 STM32H743。阵列布局时同时处理 PDM 时钟、数据线和各路供电去耦。
@@ -18,4 +20,6 @@
 
 [![音频板六层 PCB 布局预览](docs/images/pcb-layout.webp)](docs/images/pcb-layout.webp)
 
-仓库目前提供板卡照片和 PCB 布局预览。可编辑的原理图、PCB 工程和固件源码尚未上传。
+## 工程文件
+
+[Robot-Audio.epro2](hardware/eda/Robot-Audio.epro2) 包含可编辑的原理图和 PCB。下载后在嘉立创 EDA 专业版中导入。固件源码暂未上传。
